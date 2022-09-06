@@ -12,3 +12,8 @@ Current tasks
 - ~~Make simple application with jwt + async db~~
 - Build up core for project based on starlette + fastapi (70%)
 - Cleaning up (Will be done after finish core)
+
+What need to be done
+
+- Using .env or .ini file for configuration instead of Config class
+- Refactor database session implemenation (might use singleton pattern)
