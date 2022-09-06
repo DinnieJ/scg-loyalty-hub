@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:
+  scg-database:
+    container_name: scg-database
+    image: mysql:latest
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_USER=scg-loyalty
+      - MYSQL_PASSWORD=password
+      - MYSQL_DATABASE=scg-loyalty-hub
+    restart: always
+    networks:
+      - app
+    
+networks:
+  app:
